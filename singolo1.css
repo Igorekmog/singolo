@@ -118,12 +118,22 @@ body {
     position: absolute;
     top: 280px;
     left: 40px;
+    cursor: pointer;
+  }
+
+  .left:hover {
+    border: 1px solid #f06c64;
   }
   
   .right {
     position: absolute;
     top: 280px;
     right: 40px;
+    cursor: pointer;
+  }
+
+  .right:hover {
+    border: 1px solid #f06c64;
   }
   
   .vertical-phone {
@@ -147,7 +157,6 @@ body {
       font-weight: 900;
       padding-top: 60px;
       margin: 0;
-      
   }
   
   .services__content > p {
