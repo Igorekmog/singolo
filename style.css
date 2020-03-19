@@ -34,21 +34,27 @@
     margin: 0;
     font-family: "Lato", Verdana, sans-serif;
     font-size: 10px;
-    }
+  }
   
   .wrapper {
       max-width: 1020px;
     }
-    
+   
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
     .header__content {
       background-color: #2d303a;
       padding: 0 40px;
       height: 89px;
+      width: 940px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-bottom: 6px solid #323746;
-      
     }
   
     .logo__star {
@@ -71,19 +77,16 @@
       font-weight: bold;
       letter-spacing: -0.20px; 
     }
-  
-    .link_active {
-      color: #f06c64;
-      text-decoration: none;
-      font-size: 1.2rem;
-      text-align: left;
-    }
 
     .link_inactive{
         text-decoration: none;
         font-size: 1.2rem; 
         color: white;
         text-align: left;
+    }
+
+    .active {
+      color: #f06c64;
     }
     
     ul li {
@@ -113,9 +116,6 @@
       width: 100%;
       height: 600px;
       overflow: hidden;
-      /* background-color : #f06c64;
-      position: relative;
-      border-bottom: 6px solid #E5E5E5; */
     }
   
     .left {
@@ -144,8 +144,19 @@
     
     .slider-1 {
       position: absolute;
-      z-index: 1;
+      z-index: 2;
     }
+    
+    .slider-2 {
+      position: absolute;
+      z-index: 4;
+      }
+
+      .sliders {
+        overflow: hidden;
+        width: 1020px;
+      }
+      
     .vertical-phone-display{
       position: absolute;
       top: 214px;
@@ -173,16 +184,8 @@
       z-index: 3;
       cursor: pointer;
     }
-    .slider-2 {
-    left: 1020px;
-    position: absolute;
-    z-index: 4;
-    }
-    .sliders {
-      overflow: hidden;
-      width: 1020px;
-    }
-    
+
+   
     .services__content{
       padding: 0px 40px;
       background-color: #f2f2f2; 
@@ -542,6 +545,29 @@
     color: #f0d8d9;
     font-weight: 400;
 }
+
+.hidden-msg{
+  display: none;
+}
+#message-block{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  top: 0;
+  left: 0;
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: black solid 3px;
+  text-align: left;
+  background-color: salmon;
+}
+
 /* FOOTER */
 .footer__content{
     background-color: #2d303a;

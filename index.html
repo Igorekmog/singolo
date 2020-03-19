@@ -9,11 +9,11 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="header__content">
-                <h1 class="logo" id="home">SINGOLO<span class="logo__star">*</span></h1>
+            <div class="header__content" id="home">
+                <h1 class="logo">SINGOLO<span class="logo__star">*</span></h1>
                 <nav class="header__navigation">
                 <ul class="navigation" id="nav-menu">
-                    <li><a href="#home" class="link_active">HOME</a></li>
+                    <li><a href="#home" class="link_inactive active">HOME</a></li>
                     <li><a href="#services" class="link_inactive">SERVICES</a></li>
                     <li><a href="#portfolio" class="link_inactive">PORTFOLIO</a></li>
                     <li><a href="#about-us" class="link_inactive">ABOUT</a></li>
@@ -41,8 +41,8 @@
     </section>
      <section class="services">
          <div class="wrapper">
-            <div class="services__content">
-                <h2 class="services__tittle" id="services">Our Services</h2>
+            <div class="services__content" id="services">
+                <h2 class="services__tittle">Our Services</h2>
                 <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="services__container">
                     <div class="design">
@@ -105,8 +105,8 @@
      </section>
      <section class="portfolio"> 
         <div class="wrapper">
-            <div class="portfolio__content">
-                <h2 class="portfolio__tittle" id="portfolio" >Portfolio</h2>
+            <div class="portfolio__content" id="portfolio">
+                <h2 class="portfolio__tittle">Portfolio</h2>
                 <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <div class="portfolio__tags" id="portfolio-tags">
                     <span class="tag tag_bordered tag_selected">All</span>
@@ -115,26 +115,26 @@
                     <span class="tag tag_bordered">Artwork</span>
                 </div>
                 <div class="portfolio__img" id="portfolio-img">
-                    <img src="./assets/img/Image_1.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_2.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_3.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_4.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_5.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_6.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_7.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_8.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_9.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_10.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_11.png" alt="" class="portfolio_img__item">
-                    <img src="./assets/img/Image_12.png" alt="" class="portfolio_img__item">
+                    <img src="./assets/img/Image_1.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_2.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_3.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_4.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_5.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_6.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_7.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_8.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_9.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_10.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_11.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
+                    <img src="./assets/img/Image_12.png" alt="" class="portfolio_img__item" id="portfolio_img__item">
                 </div>
             </div>
         </div>
     </section> 
     <section class="about-us">
         <div class="wrapper">
-            <div class="about-us__content">
-                <h2 class="about-us__tittle" id="about-us" >About Us</h2>
+            <div class="about-us__content" id="about-us">
+                <h2 class="about-us__tittle">About Us</h2>
                 <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-3-column">
                     <div class="persons">
@@ -176,19 +176,28 @@
     </section>
     <section class="get-a-quote">
         <div class="wrapper">
-            <div class="get-a-quote__content"> 
+            <div class="get-a-quote__content" id="contacts"> 
                 <div class="get-a-quote__header">
-                    <h3 class="get-a-quote__tittle" id="contacts">Get a Quote</h3>
+                    <h3 class="get-a-quote__tittle">Get a Quote</h3>
                     <p class="get-a-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div>
                 <div class="get-a-quote__main content">
-                    <form class="content__form" action="https://www.w3schools.com/action_page.php" method="POST" target="_blank">
-                        <input type="text" class="input" name="name" placeholder="Name (Required)" required>
-                        <input type="email" class="input" name="email" placeholder="Email (Required)" required>
-                        <input type="text" class="input" name="Subject" placeholder="Subject" >
-                        <textarea name="text" class="input__text" placeholder="Describe your project in detail..."></textarea>
-                        <input type="submit" class="input__button" value="Submit">
+                    <form class="content__form">
+                        <input type="text" class="input" id="name" name="name" placeholder="Name (Required)" required>
+                        <input type="email" class="input" id="email" name="email" placeholder="Email (Required)" required>
+                        <input type="text" class="input" id="subject" name="Subject" placeholder="Subject" >
+                        <textarea name="text" class="input__text" id="description" placeholder="Describe your project in detail..."></textarea>
+                        <input type="submit" class="input__button" id="submit-btn" value="Submit">
                     </form>
+                    <div id="message-block" class="hidden-msg">
+                        <div id="message" class="">
+                            <span>The letter was sent</span>
+                            <p id="result-subject"></p>
+                            <p id="result-description"></p>
+                            <button id="close-btn">OK</button>
+                        </div>
+
+                    </div>
                     <div class="content__text contacts">
                         <h3 class="contacts__tittle">Contact Information</h3>
                         <p class="contacts__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
