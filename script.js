@@ -149,13 +149,25 @@ IMG_BORD.addEventListener('click',(event) =>{
 
 // Form
 SubButton.addEventListener('click', checkForm, true);
-   function checkForm(event)     {
+   function checkForm(event)  {
     event.preventDefault();
     let formName = document.querySelector('#name').value;
     let formEmail = document.querySelector('#email').value;
-    if (formName == '' || formEmail == '') {
-        return false;
-    }
+    if (formName == '' && formEmail == '') {
+        document.querySelector('#input-err').classList.remove('hidden-msg');
+        document.getElementById("input-err").innerText='Input NAME and e-mail please!';
+        return false;}
+        else {
+             if(formName == ''){
+                document.querySelector('#input-err').classList.remove('hidden-msg');
+                document.getElementById("input-err").innerText='Input NAME please!';
+                return false;}
+             else 
+                if(formEmail == ''){
+                document.querySelector('#input-err').classList.remove('hidden-msg');
+                document.getElementById("input-err").innerText='Input e-mail please!';
+                return false;}}
+
     document.querySelector('#message-block').classList.remove('hidden-msg');
     let subject = document.querySelector('#subject').value;
     let description = document.querySelector('#description').value;
@@ -167,10 +179,10 @@ SubButton.addEventListener('click', checkForm, true);
     document.getElementById("result-description").innerText='No description';
     else
     document.getElementById("result-description").innerText='Description: '+description;
-
     }
 
 ClsButton.addEventListener('click',(event) =>{
     document.querySelector('#message-block').classList.add('hidden-msg');
     document.querySelector('.content__form').reset();
-    });
+    document.querySelector('#input-err').classList.add('hidden-msg');
+});
