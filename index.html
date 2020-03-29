@@ -9,8 +9,13 @@
 <body>
     <header class="header">
         <div class="wrapper">
+            <div class="mobile-overlay"></div>
+            <div class="mobile-menu"></div>
             <div class="header__content" id="home">
                 <h1 class="logo">SINGOLO<span class="logo__star">*</span></h1>
+                <span class="hamburger" id="hamburger">
+                    <span class="hamburger__line"></span>   
+                </span>
                 <nav class="header__navigation">
                 <ul class="navigation" id="nav-menu">
                     <li><a href="#home" class="link_inactive active">HOME</a></li>
@@ -187,7 +192,8 @@
                         <input type="email" class="input" id="email" name="email" placeholder="Email (Required)" required>
                         <input type="text" class="input" id="subject" name="Subject" placeholder="Subject" >
                         <textarea name="text" class="input__text" id="description" placeholder="Describe your project in detail..."></textarea>
-                        <input type="submit" class="input__button" id="submit-btn" value="Submit">
+                        <input type="submit" class="input__button" id="submit-btn" value="SEND">
+                        <p class="error-input hidden-msg" id="input-err"></p>
                     </form>
                     <div id="message-block" class="hidden-msg">
                         <div id="message" class="">
@@ -206,7 +212,6 @@
                             <div><img class="content__ico" src="./assets/img/phone_cont.png" alt=""><a class="content__link" href="tel:+03528 331 86 35">03528 331 86 35</a></div>
                             <div><img class="content__ico" src="./assets/img/mail.png" alt=""><a class="content__link" href="mailto:info@singolo.com">info@singolo.com</a></div>
                         </div>
-                        <p class="error-input hidden-msg" id="input-err"></p>
                     </div>
                 </div>
             </div>
